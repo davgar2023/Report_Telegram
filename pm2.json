@@ -1,0 +1,17 @@
+{
+	"apps":[{
+		"name" : "GoReport Telegram",
+		"script" : "./app.js",
+		"port" : "3008",
+		"watch" : "./",
+		"ignore_watch" : ["./logs", "./bower_components", "./node_modules", "./public", "./informes", "./temporal"],
+		"watch_options" : {
+			"usePolling" : true
+		},
+		"error_file" : "./logs/app-error.log",
+		"out_file" : "./logs/app-out.log",
+		"env" : {
+			"NODE_ENV" : "development"
+		}
+	}]
+}
